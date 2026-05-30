@@ -25,7 +25,7 @@
     <main class="container">
       <article class="doc">
         <h1>AutoTally Privacy Policy</h1>
-        <p class="meta">Last Updated: May 10, 2026 ｜ Effective Date: May 10, 2026</p>
+        <p class="meta">Last Updated: May 30, 2026 ｜ Effective Date: May 30, 2026</p>
 
         <p>
           AutoTally values your privacy. This policy explains how this application
@@ -37,7 +37,7 @@
         <ol>
           <li>We do not require account registration or ask for personal identifiers such as phone numbers, email addresses, names, or national ID numbers.</li>
           <li>We do not upload your vehicle data, expense logs, mileage, fuel or electricity consumption, or backup files to our servers.</li>
-          <li>We do not access contacts, messages, photos, precise location, microphone, or camera for purposes unrelated to core functionality.</li>
+          <li>We do not access contacts, messages, photos, microphone, or camera for purposes unrelated to core functionality. Precise location is used only when you actively tap the location icon in a record form and grant permission, and only to help fill in the location for that record.</li>
           <li>We do not sell, rent, or disclose your personal data to third parties.</li>
           <li>We do not integrate third-party advertising or tracking SDKs that monitor your behavior.</li>
           <li>Standard local tracking, statistics, and history viewing do not require network requests.</li>
@@ -48,6 +48,7 @@
           <li>Vehicle information: vehicle name, brand, model, energy type, license plate, mileage, capacity, purchase date, residual value, and vehicle photos.</li>
           <li>Record information: fuel, charging, parking, insurance, maintenance, repairs, car washes, tolls, fines, purchase cost, and other expense records.</li>
           <li>Energy and mileage data: fuel volume, charging amount, SOC, odometer readings, expense amounts, dates, and notes.</li>
+          <li>Location information: location names entered manually by you, or addresses, place names, latitude/longitude, and location source returned by system location, reverse geocoding, and nearby place search after you actively grant location permission. Location is optional and is not required for basic tracking or statistics.</li>
           <li>Statistics: monthly expenses, total cost, cost per kilometer or mile, fuel and electricity consumption, yearly reports, and cost trends.</li>
           <li>Backup and sync configuration: local backup status, backup file metadata, cloud sync type, WebDAV address, and sync status.</li>
           <li>Security settings: master password status, biometric settings, and local encryption state. Your master password is never uploaded to us.</li>
@@ -58,10 +59,21 @@
         <ol>
           <li>File access: used to select backup files, save exported files, restore backups, or share exported files.</li>
           <li>Biometrics: if Face ID or fingerprint unlock is enabled, the app only requests the system verification result and cannot access raw biometric data.</li>
-          <li>Network access: used only when you configure cloud sync, use cloud storage or WebDAV features, purchase or restore Pro entitlement, or check store entitlement status.</li>
+          <li>Location permission: requested only when you tap the location icon in fuel, charging, or expense forms. It is used to get your current location, reverse-geocode the address, and search nearby place candidates within 200 meters. You can deny permission and still enter locations manually.</li>
+          <li>Network access: used only when you actively configure cloud sync, use cloud storage/WebDAV features that require network access, purchase or restore Pro entitlement, check store entitlement status, or when system location/map services require network access for reverse geocoding or nearby place search. Standard local tracking and statistics do not require network requests.</li>
         </ol>
 
-        <h2>IV. Cloud Sync and Backup</h2>
+        <h2>IV. Location Information Boundaries</h2>
+        <ol>
+          <li>Location information is used to help complete the place where fuel, charging, parking, repair, car wash, and similar records occurred. It may also be used for location-related statistics, search, export, or annual report display.</li>
+          <li>The current iOS version uses system location, CLGeocoder reverse geocoding, and MapKit nearby place search. Nearby candidates are limited to 200 meters by default and sorted by distance.</li>
+          <li>Addresses and nearby place candidates may be inaccurate. You can edit the selected location text afterward, or enter the location entirely manually.</li>
+          <li>Location information is stored in the local database by default. If you actively export CSV/XLSX files, export encrypted backups, restore backups, or enable cloud sync, location fields are exported, backed up, restored, or synced together with record data.</li>
+          <li>You configure and manage your own sync destination, such as OneDrive, iCloud, WebDAV, or other supported storage. Synced data is stored in your own cloud drive or server and is not uploaded to AutoTally-operated servers.</li>
+          <li>You can edit location information by editing records, or delete the corresponding location data by deleting records.</li>
+        </ol>
+
+        <h2>V. Cloud Sync and Backup</h2>
         <ol>
           <li>Cloud sync is optional. Encrypted backup data is synchronized only after you actively configure and enable it.</li>
           <li>You manage your own sync destinations, such as OneDrive, iCloud, WebDAV, or other supported storage.</li>
@@ -70,26 +82,26 @@
           <li>You are responsible for safeguarding your master and backup passwords. Forgotten passwords cannot be bypassed to decrypt backups.</li>
         </ol>
 
-        <h2>V. Purchases and Pro Entitlement</h2>
+        <h2>VI. Purchases and Pro Entitlement</h2>
         <ol>
           <li>In app store versions, subscriptions, one-time purchases, renewals, cancellations, refunds, and purchase restoration are handled by the corresponding app store.</li>
           <li>The app only reads whether Pro entitlement is valid so it can enable or restrict related features. We do not receive your full card number or payment password.</li>
         </ol>
 
-        <h2>VI. Data Deletion and Export</h2>
+        <h2>VII. Data Deletion and Export</h2>
         <ol>
           <li>You can delete vehicles or records within the app. Some items may be moved to a trash folder depending on functionality.</li>
           <li>You can export encrypted backups or full data files for migration or personal archiving.</li>
           <li>Uninstalling the app, clearing app data, deleting backup files, or deleting cloud files may result in permanent data loss.</li>
         </ol>
 
-        <h2>VII. Minors</h2>
+        <h2>VIII. Minors</h2>
         <p>This app is intended for users managing vehicle expenses and is not specifically targeted at minors. Minors should use this app only under guardian guidance.</p>
 
-        <h2>VIII. Policy Updates</h2>
+        <h2>IX. Policy Updates</h2>
         <p>We may update this policy to reflect changes in app functionality. Continued use of the app constitutes acceptance of the updated policy.</p>
 
-        <h2>IX. Contact Us</h2>
+        <h2>X. Contact Us</h2>
         <p>If you have questions about privacy or data handling, please contact us through the information provided on the About page within the app.</p>
       </article>
     </main>
